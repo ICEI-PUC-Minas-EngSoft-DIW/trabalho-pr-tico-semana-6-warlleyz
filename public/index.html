@@ -1,12 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>ViagemViva - Compartilhe suas aventuras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <img src="../img/logo.png" alt="Logo" class="logo-img">
+
+            <nav class="nav">
+                <a href="#" class="nav-link active">Início</a>
+                <a href="#" class="nav-link">Relatos</a>
+                <a href="#" class="nav-link">Mapas</a>
+                <a href="#" class="nav-link">Perfil</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- LAYOUT -->
+    <div class="main-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-card">
+                <h3>🔥 Viagens Populares</h3>
+                <ul class="trend-list">
+                    <li><a href="#">📍 Fernando de Noronha</a></li>
+                    <li><a href="#">🏔️ Chapada Diamantina</a></li>
+                    <li><a href="#">🌊 Jericoacoara</a></li>
+                    <li><a href="#">🏝️ Maldivas</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>📸 Destaque</h3>
+                <div class="featured-image">
+                    <img src="../img/joao_viajante.jpg" alt="Imagem destaque">
+                    <p>@joao_viajante</p>
+                </div>
+            </div>
+
+            <!-- FORMULÁRIO (OBRIGATÓRIO) -->
+            <div class="sidebar-card">
+                <h3>📩 Receba novidades</h3>
+                <form>
+                    <input type="text" placeholder="Seu nome">
+                    <input type="email" placeholder="Seu email">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-content">
+            
+            <section class="banner">
+                <img src="../img/banner.jpg" alt="Banner viagem">
+                <div class="banner-text">
+                <h1>Explore o mundo com o ViagemViva</h1>
+                <p>Descubra destinos incríveis, compartilhe experiências e inspire outras pessoas a viajar.</p>
+                </div>
+            </section>
+
+            <!-- SECTION (OBRIGATÓRIO) -->
+            <section class="posts-section">
+
+                <article class="featured-post">
+                    <div class="post-image">
+                        <img src="../img/maria_viagem.jpg" alt="Viagem">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-header">
+                            <img src="../img/maria_avatar.jpg" class="avatar" alt="Usuário">
+                            <div>
+                                <h2>Maria Viagens</h2>
+                                <span class="date">5 dias atrás | Reykjavík, Islândia</span>
+                            </div>
+                        </div>
+
+                        <h3>❄️ Caçando auroras e explorando vulcões na Islândia</h3>
+
+                        <p>
+                            Passei 5 dias explorando paisagens que parecem de outro planeta! Entre cachoeiras gigantes, campos de lava e geysers ativos, o ponto alto foi ver a aurora boreal dançando no céu — simplesmente surreal. Aluguei um carro para rodar a Golden Circle e recomendo muito ir no inverno. Dica: se prepare para o frio intenso e leve roupas térmicas!
+                        </p>
+
+                        <div class="post-stats">
+                            <span>❤️ 15k</span>
+                            <span>💬 400</span>
+                            <span>👁️ 20k</span>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="cards">
+
+            <div class="card">
+                <img src="../img/destinos_incriveis.jpg" alt="">
+                <h3>Destinos incríveis</h3>
+                <p>Conheça lugares paradisíacos ao redor do mundo.</p>
+            </div>
+
+             <div class="card">
+                <img src="../img/dicas_viagem.jpg" alt="">
+                <h3>Dicas de viagem</h3>
+                <p>Aprenda a economizar e viajar melhor.</p>
+            </div>
+
+            <div class="card">
+                <img src="../img/relatos_reais.avif" alt="Relatos Reais">
+                <h3>Relatos reais</h3>
+                <p>Veja experiências de outros viajantes.</p>
+            </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 ViagemViva - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
 </body>
 </html>
