@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViagemViva - Compartilhe suas aventuras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,59 +12,66 @@
 <body>
 
     <!-- CABEÇARIO -->
-    <header class="header">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <img src="../images/logo.png" alt="Logo" class="logo-img">
+            <img src="../images/logo.png" height="50">
 
-            <nav class="nav">
-                <a href="#" class="nav-link active">Início</a>
-                <a href="#" class="nav-link">Relatos</a>
-                <a href="#" class="nav-link">Mapas</a>
-                <a href="#" class="nav-link">Perfil</a>
-            </nav>
-        </div>
-    </header>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- LAYOUT -->
-    <div class="main-container">
-
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-
-            <div class="sidebar-card">
-                <h3>🔥 Viagens Populares</h3>
-                <ul class="trend-list">
-                    <li><a href="#">📍 Fernando de Noronha</a></li>
-                    <li><a href="#">🏔️ Chapada Diamantina</a></li>
-                    <li><a href="#">🌊 Jericoacoara</a></li>
-                    <li><a href="#">🏝️ Maldivas</a></li>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a class="nav-link">Relatos</a></li>
+                    <li class="nav-item"><a class="nav-link">Mapas</a></li>
+                    <li class="nav-item"><a class="nav-link">Perfil</a></li>
                 </ul>
             </div>
+        </div>
+    </nav>
 
-            <div class="sidebar-card">
-                <h3>📸 Destaque</h3>
-                <div class="featured-image">
-                    <img src="../images/joao_viajante.jpg" alt="Imagem destaque">
-                    <p>@joao_viajante</p>
+    <!-- LAYOUT -->
+    <div class="container mt-4 px-5">
+        <div class="row g-4">
+
+        <!-- SIDEBAR -->
+        <div class="col-md-4">
+            <div class="sidebar">
+                <div class="sidebar-card">
+                    <h3>🔥 Viagens Populares</h3>
+                    <ul class="trend-list">
+                        <li><a href="#">📍 Fernando de Noronha</a></li>
+                        <li><a href="#">🏔️ Chapada Diamantina</a></li>
+                        <li><a href="#">🌊 Jericoacoara</a></li>
+                        <li><a href="#">🏝️ Maldivas</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>📸 Destaque</h3>
+                    <div class="featured-image">
+                        <img src="../images/joao_viajante.jpg" alt="Imagem destaque">
+                        <p>@joao_viajante</p>
+                    </div>
+                </div>
+
+                <!-- FORMULÁRIO -->
+                <div class="sidebar-card">
+                    <h3>📩 Receba novidades</h3>
+                    <form>
+                        <input class="form-control mb-2" type="text" placeholder="Seu nome">
+                        <input class="form-control mb-2" type="text" placeholder="Seu email">
+                        <button class="btn btn-warning w-100">Enviar</button>
+                    </form>
                 </div>
             </div>
-
-            <!-- FORMULÁRIO -->
-            <div class="sidebar-card">
-                <h3>📩 Receba novidades</h3>
-                <form>
-                    <input type="text" placeholder="Seu nome">
-                    <input type="text" placeholder="Seu email">
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-
-        </aside>
+        </div>
 
         <!-- MAIN -->
-        <main class="main-content">
+        <div class="col-md-8">
             
-            <section class="banner">
+            <section class="banner mb-4">
                 <img src="../images/banner.jpg" alt="Banner viagem">
                 <div class="banner-text">
                 <h1>Explore o mundo com o ViagemViva</h1>
@@ -80,7 +88,7 @@
                     </div>
 
                     <div class="post-content">
-                        <div class="post-header">
+                        <div class="post-header d-flex align-items-center gap-3">
                             <img src="../images/maria_avatar.jpg" class="avatar" alt="Usuário">
                             <div>
                                 <h2>Maria Viagens</h2>
@@ -94,7 +102,7 @@
                             Passei 5 dias explorando paisagens que parecem de outro planeta! Entre cachoeiras gigantes, campos de lava e geysers ativos, o ponto alto foi ver a aurora boreal dançando no céu — simplesmente surreal. Aluguei um carro para rodar a Golden Circle e recomendo muito ir no inverno. Dica: se prepare para o frio intenso e leve roupas térmicas!
                         </p>
 
-                        <div class="post-stats">
+                        <div class="post-stats d-flex gap-4">
                             <span>❤️ 15k</span>
                             <span>💬 400</span>
                             <span>👁️ 20k</span>
@@ -105,49 +113,66 @@
             </section>
 
              <!-- CARDs -->
+            <div class="row mt-4 g-4">
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/destinos_incriveis.jpg" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Destinos incríveis</h5>
+                        <p class="card-text">Conheça lugares paradisíacos</p>
+                        </div>
+                    </div>
+                </div>
 
-            <section class="cards">
-
-            <div class="card">
-                <img src="../images/destinos_incriveis.jpg" alt="">
-                <h3>Destinos incríveis</h3>
-                <p>Conheça lugares paradisíacos ao redor do mundo.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/dicas_viagem.jpg" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Dicas de viagem</h5>
+                        <p class="card-text">Aprenda a economizar e viajar melhor</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/relatos_reais.avif" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Relatos reais</h5>
+                        <p class="card-text">Veja experiências de outros viajantes</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-             <div class="card">
-                <img src="../images/dicas_viagem.jpg" alt="">
-                <h3>Dicas de viagem</h3>
-                <p>Aprenda a economizar e viajar melhor.</p>
-            </div>
-
-            <div class="card">
-                <img src="../images/relatos_reais.avif" alt="Relatos Reais">
-                <h3>Relatos reais</h3>
-                <p>Veja experiências de outros viajantes.</p>
-            </div>
-
-            </section>
-        </main>
+        </div>
+        </div>
     </div>
 
-    <!-- RODAPÉ  -->
-    <footer class="footer">
-    <div class="footer-container">
-        <p>© 2026 ViagemViva - Todos os direitos reservados</p>
-    </div>
-    <div class="links">
-        <a href="https://www.linkedin.com/in/warlleysilvab/" target="_blank" class="linkedin">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
-        </a>
+        <!-- RODAPÉ  -->
+    <footer class="footer py-3">
+        <div class="footer-container">
+            <p class="mb-0">© 2026 ViagemViva - Todos os direitos reservados</p>
+        </div>
 
-        <a href="https://github.com/warlleyz" target="_blank" class="github">
-            <img src="https://cdn-user-icons.flaticon.com/222250/222250443/1776384749016.svg?token=exp=1776385655~hmac=812f0978942b47f826a6d15cb6d3bf01" width="40">
-        </a>
-        <a href="#" target="_blank" class="contato">
-            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" width="40">
-        </a>
-    </div>
+        <div class="links d-flex gap-3">
+            <a href="https://www.linkedin.com/in/warlleysilvab/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="35">
+            </a>
+
+            <a href="https://github.com/warlleyz" target="_blank">
+                <img src="https://cdn-user-icons.flaticon.com/222250/222250443/1776384749016.svg?token=exp=1776385655~hmac=812f0978942b47f826a6d15cb6d3bf01" width="35">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" width="35">
+            </a>
+
+        </div>
     </footer>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
