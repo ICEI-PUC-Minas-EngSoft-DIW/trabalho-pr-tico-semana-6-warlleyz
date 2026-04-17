@@ -8,18 +8,22 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Warlley Silva Baião Braga
+- Matricula: 928126
+- Proposta de projeto escolhida:  Lugares e Experiências
+- Breve descrição sobre seu projeto: Site para as pessoas postarem relatos de suas viagens
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+<<  [PRINT_DESKTOP_1](images/print_desktop(1).png) >>
+<<  [PRINT_DESKTOP_2](images/print_desktop(2).png) >>
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+<<  [PRINT_MOBILE_1](images/print_mobile(1).png) >>
+<<  [PRINT_MOBILE_2](images/print_mobile(2).png) >>
+<<  [PRINT_MOBILE_3](images/print_mobile(3).png) >>
+<<  [PRINT_MOBILE_4](images/print_mobile(4).png) >>
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
