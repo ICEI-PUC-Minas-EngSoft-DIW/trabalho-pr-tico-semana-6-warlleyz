@@ -13,17 +13,39 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 - Proposta de projeto escolhida:  Lugares e Experiências
 - Breve descrição sobre seu projeto: Site para as pessoas postarem relatos de suas viagens
 
-## Print da versão responsiva com Bootstrap [DESKTOP]
+## Print da Home-Page
+<<  [HOME-PAGE](images/print_homepage.png) >>
 
-<<  [PRINT_DESKTOP_1](images/print_desktop(1).png) >>
-<<  [PRINT_DESKTOP_2](images/print_desktop(2).png) >>
+## Print da Pagina Detalhes
+<<  [PAGINA_DETALHES](images/print_paginadetalhes.png) >>
 
-## Print da versão responsiva com Bootstrap [MOBILE] (*)
+## Dados JSON
+const viagens = [
 
-<<  [PRINT_MOBILE_1](images/print_mobile(1).png) >>
-<<  [PRINT_MOBILE_2](images/print_mobile(2).png) >>
-<<  [PRINT_MOBILE_3](images/print_mobile(3).png) >>
-<<  [PRINT_MOBILE_4](images/print_mobile(4).png) >>
-
-
-(*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
+    {
+        id: 1,
+        autor: "Maria Viagens",
+        local: "Reykjavík, Islândia",
+        data: "5 dias atrás",
+        titulo: "❄️ Caçando auroras e explorando vulcões na Islândia",
+        descricao: "Passei 5 dias explorando paisagens que parecem de outro planeta! Entre cachoeiras gigantes, campos de lava e geysers ativos, o ponto alto foi ver a aurora boreal dançando no céu.",
+        imagem: "../images/maria_viagem.jpg",
+        avatar: "../images/maria_avatar.jpg",
+        curtidas: "15k",
+        comentarios: "400",
+        visualizacoes: "20k"
+    },
+    {
+        id: 2,
+        autor: "Marcelo Aventuras",
+        local: "Tóquio, Japão",
+        data: "7 dias atrás",
+        titulo: "🌃 Explorando as luzes e a cultura de Tóquio",
+        descricao: "Tóquio mistura tradição e tecnologia de forma impressionante. Marcelo visitou bairros famosos como Shibuya e Akihabara, experimentou comidas típicas incríveis e conheceu templos históricos.",
+        imagem: "../images/marcelo_viagem.png",
+        avatar: "../images/marcelo_avatar.png",
+        curtidas: "754k",
+        comentarios: "25.7k",
+        visualizacoes: "1.7M"
+    }
+];
