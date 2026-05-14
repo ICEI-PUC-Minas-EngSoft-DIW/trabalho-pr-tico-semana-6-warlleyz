@@ -1,15 +1,11 @@
-/* =========================
-   RESET
-========================= */
+/* === RESET === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* =========================
-   BODY
-========================= */
+/* === BODY === */
 body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #1E1B18 0%, #2D281E 100%);
@@ -18,9 +14,7 @@ body {
     min-height: 100vh;
 }
 
-/* =========================
-   NAVBAR / CABEÇALHO
-========================= */
+/* === NAVBAR / CABEÇALHO === */
 .navbar {
     background: rgba(30, 27, 24, 0.95);
     backdrop-filter: blur(20px);
@@ -52,16 +46,12 @@ body {
     box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
 }
 
-/* =========================
-   LAYOUT
-========================= */
+/* === LAYOUT === */
 .main-container {
     margin-top: 2rem;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+/* === SIDEBAR === */
 .sidebar {
     background: linear-gradient(145deg, #0F172A 0%, #1E293B 100%);
     color: #F8FAFC;
@@ -121,9 +111,7 @@ body {
     border-radius: 15px;
 }
 
-/* =========================
-   FORMULÁRIOS
-========================= */
+/* === FORMULÁRIOS === */
 .sidebar .form-control {
     background-color: rgba(249, 115, 22, 0.1);
     color: white;
@@ -136,9 +124,7 @@ body {
     color: white;
 }
 
-/* =========================
-   BANNER
-========================= */
+/* === BANNER ===*/
 .banner {
     position: relative;
     border-radius: 20px;
@@ -159,9 +145,7 @@ body {
     text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }
 
-/* =========================
-   POSTS
-========================= */
+/* === POSTS === */
 .featured-post {
     background: linear-gradient(145deg, #2D281E 0%, #3F3425 100%);
     border-radius: 28px;
@@ -204,9 +188,7 @@ body {
     font-weight: 500;
 }
 
-/* =========================
-   AVATAR / DATA
-========================= */
+/* === AVATAR / DATA === */
 .avatar {
     width: 55px;
     height: 55px;
@@ -221,9 +203,7 @@ body {
     color: #94A3B8;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* === CARDS === */
 .card {
     background: linear-gradient(145deg, #2D281E, #3F3425);
     border-radius: 15px;
@@ -243,9 +223,7 @@ body {
     border-radius: 10px;
 }
 
-/* =========================
-   BOTÕES
-========================= */
+/* === BOTÕES === */
 .post-btn {
     background: linear-gradient(135deg, #F97316, #F59E0B);
     border: none;
@@ -262,9 +240,7 @@ body {
     box-shadow: 0 15px 30px rgba(249, 115, 22, 0.35);
 }
 
-/* =========================
-   DETALHES
-========================= */
+/* === DETALHES === */
 #detalhes-container{
     width: 100%;
     display: flex;
@@ -297,9 +273,7 @@ body {
     color: #E2E8F0;
 }
 
-/* =========================
-   INTERAÇÃO DETALHES
-========================= */
+/* === INTERAÇÃO DETALHES === */
 .seguir-btn {
     background: rgba(249, 115, 22, 0.15);
     border: 1px solid rgba(249, 115, 22, 0.4);
@@ -314,9 +288,7 @@ body {
     color: white;
 }
 
-/* =========================
-   COMENTÁRIOS
-========================= */
+/* === COMENTÁRIOS === */
 .comentarios-container {
     margin-top: 4rem;
     padding-top: 3rem;
@@ -331,9 +303,7 @@ body {
     resize: none;
 }
 
-/* =========================
-   GALERIA
-========================= */
+/* === GALERIA === */
 .galeria-container {
     position: relative;
 }
@@ -360,9 +330,7 @@ body {
     background: #F97316;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* === FOOTER === */
 .footer {
     background: rgba(30, 27, 24, 0.95);
     backdrop-filter: blur(20px);
@@ -377,9 +345,7 @@ body {
     margin-left: auto;
 }
 
-/* =========================
-   UTILITÁRIOS
-========================= */
+/* === UTILITÁRIOS === */
 .col-md-8 > * {
     margin-bottom: 2rem;
 }
