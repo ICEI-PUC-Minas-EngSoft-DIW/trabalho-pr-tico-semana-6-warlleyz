@@ -51,10 +51,15 @@ if(postsContainer){
                 <p>
                     ${viagem.descricao}
                 </p>
-                <div class="post-stats d-flex gap-4">
-                    <span>❤️ ${viagem.curtidas}</span>
-                    <span>💬 ${viagem.comentarios}</span>
-                    <span>👁️ ${viagem.visualizacoes}</span>
+                <div class="post-footer d-flex justify-content-between align-items-center mt-4">
+                    <div class="post-stats d-flex gap-4">
+                        <span>❤️ ${viagem.curtidas}</span>
+                        <span>💬 ${viagem.comentarios}</span>
+                        <span>👁️ ${viagem.visualizacoes}</span>
+                    </div>
+                    <a href="detalhes.html?id=${viagem.id}" class="btn post-btn">
+                    Ler relato completo
+                    </a>
                 </div>
             </div>
         </article>

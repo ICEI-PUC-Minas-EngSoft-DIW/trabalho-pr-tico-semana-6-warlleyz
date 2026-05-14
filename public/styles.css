@@ -266,3 +266,25 @@ body {
 .col-md-8 > * {
     margin-bottom: 2rem;
 }
+
+/* === BOTÃO DOS POSTS === */
+
+.post-btn{
+    background: linear-gradient(135deg, #F97316, #F59E0B);
+    border: none;
+    color: #1E1B18;
+    font-weight: 600;
+    padding: 0.8rem 1.4rem;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(249, 115, 22, 0.25);
+}
+
+.post-btn:hover{
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 30px rgba(249, 115, 22, 0.35);
+
+    color: #1E1B18;
+}
