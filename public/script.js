@@ -37,7 +37,9 @@ if(postsContainer){
             <div class="post-image">
                 <img src="${viagem.imagem}" alt="Viagem">
             </div>
+            
             <div class="post-content">
+                
                 <div class="post-header d-flex align-items-center gap-3">
                     <img src="${viagem.avatar}" class="avatar">
                     <div>
@@ -47,10 +49,13 @@ if(postsContainer){
                         </span>
                     </div>
                 </div>
+                
                 <h3>${viagem.titulo}</h3>
+                
                 <p>
                     ${viagem.descricao}
                 </p>
+
                 <div class="post-footer d-flex justify-content-between align-items-center mt-4">
                     <div class="post-stats d-flex gap-4">
                         <span>❤️ ${viagem.curtidas}</span>
@@ -61,9 +66,94 @@ if(postsContainer){
                     Ler relato completo
                     </a>
                 </div>
+
             </div>
         </article>
 
         `;
     });
+}
+
+const detalhesContainer = document.getElementById("detalhes-container");
+if(detalhesContainer){
+    const parametros = new URLSearchParams(window.location.search);
+    const id = parametros.get("id");
+    const viagem = viagens.find(v => v.id == id);
+    if(viagem){
+        detalhesContainer.innerHTML = `
+
+        <article class="featured-post detalhes-post">
+            <div class="galeria-container">
+                <img 
+                    src="${viagem.imagem}" 
+                    alt="Viagem"
+                    id="imagem-principal"
+                    class="imagem-detalhes"
+                >
+
+                <div class="galeria-botoes">
+                    <button class="btn galeria-btn">
+                        ◀
+                    </button>
+                    <button class="btn galeria-btn">
+                        ▶
+                    </button>
+                </div>
+            </div>
+
+            <div class="post-content detalhes-content">
+                <div class="post-header d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="${viagem.avatar}" class="avatar">
+                        <div>
+                            <h2>${viagem.autor}</h2>
+                            <span class="date">
+                                ${viagem.data} | ${viagem.local}
+                            </span>
+                        </div>
+                    </div>
+                    <button class="btn seguir-btn">
+                        + Seguir
+                    </button>
+                </div>
+
+                <h1 class="titulo-detalhes">
+                    ${viagem.titulo}
+                </h1>
+
+                <p class="texto-detalhes">
+                    ${viagem.descricao}
+                    <br><br>
+                    Durante a viagem, diversas experiências marcaram o percurso. Entre paisagens urbanas iluminadas, culturas diferentes e novas descobertas, cada momento trouxe uma sensação única de exploração e liberdade.
+                    <br><br>
+                    Além dos pontos turísticos famosos, o contato com moradores locais, a culinária típica e os pequenos detalhes das ruas fizeram toda a diferença.
+                </p>
+
+                <div class="post-footer d-flex justify-content-between align-items-center mt-5 flex-wrap gap-3">
+                    <div class="post-stats d-flex gap-4">
+                        <span>❤️ ${viagem.curtidas}</span>
+                        <span>💬 ${viagem.comentarios}</span>
+                        <span>👁️ ${viagem.visualizacoes}</span>
+                    </div>
+                    <a href="index.html" class="btn post-btn">
+                        ← Voltar
+                    </a>
+                </div>
+
+                <div class="comentarios-container">
+                    <h3>Comentários</h3>
+                    <textarea 
+                        class="form-control comentario-input"
+                        placeholder="Compartilhe sua opinião sobre essa viagem...">      
+                    </textarea>
+                    <button class="btn post-btn mt-3">
+                        Publicar comentário
+                    </button>
+                </div>
+
+            </div>
+        </article>
+
+        `;
+    }
 }
